@@ -73,7 +73,7 @@ namespace CIS3285_Unit4_StudentMVC_2024.Controllers
             // The collection is a map that contains the data fields from the view
             try
             {
-                StudentModel updatedStudent = new StudentModel();
+                IStudentInterface updatedStudent = new StudentModel();
                 // Retrieve form data using form collection
                 updatedStudent.Id = id;
                 updatedStudent.Name = collection["Name"];
